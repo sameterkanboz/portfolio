@@ -7,26 +7,26 @@ export const links = [
     name: "Hakkımda",
     hash: "#about",
   },
-  {
-    name: "Projelerim",
-    hash: "#projects",
-  },
+  // {
+  //   name: "Projelerim",
+  //   hash: "#projects",
+  // },
   {
     name: "Yeteneklerim",
     hash: "#skills",
   },
-  {
-    name: "Deneyimlerim",
-    hash: "#experience",
-  },
-  {
-    name: "Makalelerim",
-    hash: "#articles",
-  },
-  {
-    name: "İletişim",
-    hash: "#contact",
-  },
+  // {
+  //   name: "Deneyimlerim",
+  //   hash: "#experience",
+  // },
+  // {
+  //   name: "Makalelerim",
+  //   hash: "#articles",
+  // },
+  // {
+  //   name: "İletişim",
+  //   hash: "#contact",
+  // },
 ] as const;
 
 // export const experiencesData = [
@@ -87,17 +87,12 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
+  "GoLang",
 ] as const;
