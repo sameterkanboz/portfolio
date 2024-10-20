@@ -1,14 +1,17 @@
 import React from "react";
 import { AiOutlineRobot } from "react-icons/ai";
-import { CgWorkAlt } from "react-icons/cg";
+
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import { TbBrandNextjs } from "react-icons/tb";
+import { GiTigerHead } from "react-icons/gi";
+import { CiCoffeeBean } from "react-icons/ci";
+import { FaCrow } from "react-icons/fa";
 
 import { default as carServiceApp } from "/public/car-service-app.png";
 import { default as libraryTracker } from "/public/library-tracker.jpg";
 import { default as makaleUbuntu } from "/public/makale.jpeg";
 import { default as r3fTextileConfigurator } from "/public/r3f-textile-configurator.png";
+import Beije from "@/components/beije";
 export const links = [
   {
     name: "Hakkımda",
@@ -39,12 +42,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Front-End Geliştirici",
-    location: "İstanbul, Türkiye (Ofis)",
+    title: "Depixen - Front-End Geliştirici",
+    location: "İstanbul, Türkiye (Ofis - Tam Zamanlı)",
     description:
       "Bir sene boyunca front-end geliştirici olarak çalıştım. Bu süre zarfında full stack geliştirici olmak için kendimi geliştirdim ve çeşitli R&D çalışmalarında bulundum.",
     icon: React.createElement(FaReact),
-    date: "2022 - 2023",
+    date: "2022 Eylül - 2023 Ekim",
     used_technologies: [
       "React",
       "React Native",
@@ -56,30 +59,30 @@ export const experiencesData = [
     ],
   },
   {
-    title: "Front-End Geliştirici",
-    location: "İstanbul, Türkiye (Hibrit)",
+    title: "fiyatperformans - Front-End Geliştirici",
+    location: "İstanbul, Türkiye (Hibrit - Sözleşmeli)",
     description:
       "Bir e-ticaret şirketinde kısa süreli front-end geliştirici olarak çalıştım.",
-    icon: React.createElement(TbBrandNextjs),
-    date: "2023",
+    icon: React.createElement(GiTigerHead),
+    date: "2023 Ekim - 2023 Aralık",
     used_technologies: ["React", "Next.js", "Tailwind", "Redux"],
   },
   {
-    title: "Stajyer Full-Stack Developer",
-    location: "İstanbul, Türkiye (Uzaktan) ",
+    title: "Kafein - Full-Stack Developer",
+    location: "İstanbul, Türkiye (Uzaktan - Stajyer) ",
     description:
       "Burada bir ay boyunca stajyer full-stack developer olarak görev yaptım. Bu süre boyunca uçtan uca bir mobil uygulama hazırladım.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(CiCoffeeBean),
     date: "2024 Ocak",
     used_technologies: ["React Native", "GoLang", "PostgreSQL"],
   },
   {
-    title: "Robotik UAM Asistanı",
-    location: "İstanbul, Türkiye",
+    title: "İGÜ BTRAM - Robotik UAM Asistanı",
+    location: "İstanbul, Türkiye (Ofis - Yarı Zamanlı)",
     description:
-      "Öğrencisi olduğum İstanbul Gelişim Üniversitesi bünyesinde bulunan robotik araştırma merkezinde asistan öğrenci olarak görev almaktayım.",
+      "Öğrencisi olduğum İstanbul Gelişim Üniversitesi bünyesinde bulunan robotik araştırma merkezinde asistan öğrenci olarak görev aldım.",
     icon: React.createElement(AiOutlineRobot),
-    date: "2024 - ...",
+    date: "2024 Ocak - 2024 Haziran",
     used_technologies: ["Ardunio", "Raspberry Pi", "Python", "C++"],
   },
   {
@@ -87,8 +90,27 @@ export const experiencesData = [
     location: "İstanbul, Türkiye",
     description: "4 Yıllık Bilgisayar Mühendisliği lisans eğitimi tamamladım.",
     icon: React.createElement(LuGraduationCap),
-    date: "2024",
+    date: "2020 - 2024",
     used_technologies: ["Java", "C++", "Python", "SQL"],
+  },
+
+  {
+    title: "kargakarga - Frontend Developer",
+    location: "İstanbul, Türkiye (Hibrit - Sözleşmeli)",
+    description:
+      "İstanbul merkezli bir teknoloji şirketinde hibrit sözleşmeli olarak çalıştım. Proje bazlı olarak, kullanıcı deneyimi ve performansa odaklı web sayfaları geliştirdim.",
+    icon: React.createElement(FaCrow),
+    date: "2024 Mayıs - 2024 Temmuz",
+    used_technologies: ["Next.js", "Javascript", "React"],
+  },
+  {
+    title: "beije. - Full Stack Developer",
+    location: "İstanbul, Türkiye (Hibrit - Tam Zamanlı)",
+    description:
+      "Tam zamanlı olarak full stack developer görevinde çalışmaktayım. Proje geliştirme sürecinde frontend ve backend arasında köprü görevi üstlenerek, modern teknolojilerle entegre çözümler üretiyorum.",
+    icon: React.createElement(Beije),
+    date: "2024 Temmuz - ...",
+    used_technologies: ["Next.js", "Typescript", "React", "MUI", "Redux"],
   },
 ] as const;
 
