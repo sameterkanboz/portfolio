@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 
-const PAGES = { en: ".next/server/app/index.html", tr: ".next/server/app/tr.html" };
+const PAGES = { en: ".next/server/app/index.html" };
 const BANNED = [/—/, /–(?! \d)/, /\[your /i, /lorem ipsum/i];
 const errors = [];
 
@@ -19,9 +19,6 @@ for (const [lang, file] of Object.entries(PAGES)) {
   if (title.length < 20 || title.length > 60) fail(`title is ${title.length} chars`);
   if (description.length < 120 || description.length > 160)
     fail(`description is ${description.length} chars`);
-  for (const other of Object.keys(PAGES)) {
-    if (!html.includes(`hrefLang="${other}"`)) fail(`no hreflang ${other}`);
-  }
   if (!html.includes("mailto:")) fail("no email link");
   for (const pattern of BANNED) {
     if (pattern.test(text)) fail(`banned text ${pattern}`);
@@ -32,4 +29,4 @@ if (errors.length > 0) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log("check-build: both pages ok");
+console.log("check-build: ok");

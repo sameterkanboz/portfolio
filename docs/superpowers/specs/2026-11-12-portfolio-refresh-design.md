@@ -22,3 +22,7 @@ The page is for employers and recruiters; a visitor should want to talk to Samet
 
 - An up-to-date CV. The old PDF stays in `public/` but nothing links to it.
 - A share image for link previews.
+
+## Changed the same day
+
+Samet preferred a business card over the long page: one card with his name, one sentence, three rows (now, works on, before), the email and links. The work itself is told on terminal.seboz.dev, which the card links to. Both sites are English only; the Turkish versions were removed. The long page's sections and texts were deleted.

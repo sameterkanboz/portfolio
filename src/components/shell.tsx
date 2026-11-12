@@ -18,35 +18,23 @@ const mono = JetBrains_Mono({
   variable: "--font-mono",
 });
 
-export const metadataFor = (content: Content): Metadata => {
-  const path = content.lang === "en" ? "/" : "/tr";
-  return {
-    metadataBase: new URL(SITE),
+export const metadataFor = (content: Content): Metadata => ({
+  metadataBase: new URL(SITE),
+  title: content.meta.title,
+  description: content.meta.description,
+  alternates: { canonical: "/" },
+  openGraph: {
     title: content.meta.title,
     description: content.meta.description,
-    alternates: {
-      canonical: path,
-      languages: { en: "/", tr: "/tr", "x-default": "/" },
-    },
-    openGraph: {
-      title: content.meta.title,
-      description: content.meta.description,
-      url: path,
-      type: "profile",
-      locale: content.lang === "en" ? "en_US" : "tr_TR",
-    },
-    icons: { icon: "/icon.png", apple: "/apple-icon.png" },
-  };
-};
+    url: "/",
+    type: "profile",
+    locale: "en_US",
+  },
+  icons: { icon: "/icon.png", apple: "/apple-icon.png" },
+});
 
-export const Shell = ({
-  lang,
-  children,
-}: {
-  lang: Content["lang"];
-  children: React.ReactNode;
-}) => (
-  <html lang={lang}>
+export const Shell = ({ children }: { children: React.ReactNode }) => (
+  <html lang="en">
     <body
       className={`${display.variable} ${sans.variable} ${mono.variable} font-sans antialiased`}
     >
