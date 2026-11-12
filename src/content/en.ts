@@ -125,7 +125,10 @@ export const en: Content = {
     line: "I build the storefronts, admin tools and services behind beije, a period care brand that sells by subscription.",
     rows: [
       { title: "Now", body: "Full Stack Developer at beije, since 2024" },
-      { title: "Works with", body: "TypeScript, React, Next.js, NestJS" },
+      {
+        title: "Works on",
+        body: "Web apps, backend services, design systems, test automation",
+      },
       { title: "Before", body: "Depixen, fiyatperformans, kargakarga" },
     ],
     terminal: "The work, in a terminal",
