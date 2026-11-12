@@ -1,6 +1,6 @@
-import { Page } from "@/components/page";
+import { Card } from "@/components/card";
 import { tr } from "@/content/tr";
 
 export default function Home() {
-  return <Page content={tr} />;
+  return <Card content={tr} />;
 }

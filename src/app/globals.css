@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --paper: #f8f5ef;
+  --paper: #efeae0;
+  --card: #fbf9f4;
   --ink: #1b1a17;
   --soft: #5e5a52;
   --line: #ddd7ca;
@@ -12,7 +13,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #131210;
+    --paper: #0d0c0b;
+    --card: #171614;
     --ink: #ece8df;
     --soft: #a39d91;
     --line: #2e2b26;

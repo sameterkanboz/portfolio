@@ -121,4 +121,13 @@ export const tr: Content = {
     heading: "Bana ulaşın",
     body: "Bana en hızlı e-postayla ulaşabilirsiniz. Bir iki gün içinde yanıtlarım.",
   },
+  card: {
+    line: "Regl bakım ürünlerini abonelikle satan beije'nin mağaza sitelerini, yönetim araçlarını ve servislerini geliştiriyorum.",
+    rows: [
+      { title: "Şimdi", body: "beije'de Full Stack Developer, 2024'ten beri" },
+      { title: "Teknolojiler", body: "TypeScript, React, Next.js, NestJS" },
+      { title: "Öncesi", body: "Depixen, fiyatperformans, kargakarga" },
+    ],
+    terminal: "İşler, terminalde",
+  },
 };

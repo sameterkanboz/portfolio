@@ -34,9 +34,11 @@ export interface Content {
   path: { label: string; heading: string; steps: Step[] };
   stack: { label: string; heading: string; groups: Note[] };
   contact: { label: string; heading: string; body: string };
+  card: { line: string; rows: Note[]; terminal: string };
 }
 
 export const EMAIL = "sameterkanboz@gmail.com";
 export const LINKEDIN = "https://www.linkedin.com/in/sameterkanboz/";
 export const GITHUB = "https://github.com/sameterkanboz";
+export const TERMINAL = "https://terminal.seboz.dev";
 export const SITE = "https://seboz.dev";

@@ -9,6 +9,7 @@ const config: Config = {
         ink: "var(--ink)",
         soft: "var(--soft)",
         line: "var(--line)",
+        card: "var(--card)",
         accent: "var(--accent)",
       },
       fontFamily: {

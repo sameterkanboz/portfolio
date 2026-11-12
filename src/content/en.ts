@@ -121,4 +121,13 @@ export const en: Content = {
     heading: "Get in touch",
     body: "Email is the quickest way to reach me. I answer within a day or two.",
   },
+  card: {
+    line: "I build the storefronts, admin tools and services behind beije, a period care brand that sells by subscription.",
+    rows: [
+      { title: "Now", body: "Full Stack Developer at beije, since 2024" },
+      { title: "Works with", body: "TypeScript, React, Next.js, NestJS" },
+      { title: "Before", body: "Depixen, fiyatperformans, kargakarga" },
+    ],
+    terminal: "The work, in a terminal",
+  },
 };
