@@ -2,14 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --paper: #efeae0;
+  --card: #fbf9f4;
+  --ink: #1b1a17;
+  --soft: #5e5a52;
+  --line: #ddd7ca;
+  --accent: #8a2b1d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0d0c0b;
+    --card: #171614;
+    --ink: #ece8df;
+    --soft: #a39d91;
+    --line: #2e2b26;
+    --accent: #e58a72;
+  }
+}
+
 html {
-  --line-color: #e5e7eb;
+  scroll-behavior: smooth;
 }
 
-html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+body {
+  background: var(--paper);
+  color: var(--ink);
 }
 
-.borderBlack {
-  @apply border border-black/10;
+::selection {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
